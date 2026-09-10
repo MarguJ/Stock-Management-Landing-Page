@@ -6,7 +6,9 @@ function App() {
   return (
     <div className='bg-gray-400 min-w-screen min-h-screen'>
       <section id='1'  className='welcome'>
-        
+        <div className='bg-white min-h-150 w-200'>
+          <img className='min-h-150 min-w-400' src="../images/image.png"/>
+        </div>
       </section>
       <section id='2' className='about us'>
         <div className='font-[Kdam Thmor Pro] bg-red-600 min-w-screen min-h-40 text-white text-7xl flex items-center justify-center'>¿Quienes somos?</div>
