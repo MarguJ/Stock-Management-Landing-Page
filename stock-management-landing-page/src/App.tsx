@@ -1,11 +1,15 @@
 import "./index.css";
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <div className="bg-gray-400 min-w-screen min-h-screen">
+      <header>
+        <Navbar></Navbar>
+      </header>
       <section id="1" className="welcome">
-        <div className="bg-white min-h-160 w-200">
-          <img src="../images/pasillo.jpg" />
+        <div className="bg-gray-450 min-h-screen min-w-screen">
+          <img className="min-h-screen" src="../images/pasillo.jpg" />
         </div>
       </section>
       <section id="2" className="about us">
