@@ -5,7 +5,7 @@ function App() {
     <div className="bg-gray-400 min-w-screen min-h-screen">
       <section id="1" className="welcome">
         <div className="bg-white min-h-160 w-200">
-          <img src="./images/pasillo.jpg" />
+          <img src="../images/pasillo.jpg" />
         </div>
       </section>
       <section id="2" className="about us">
