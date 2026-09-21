@@ -138,41 +138,41 @@ button {
   background-size: 20px 20px;
 }
 .highlights {
-  height: 158px;
+  min-height: calc(100vh - 69px);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 62px;
-  padding: 0 25px;
+  gap: clamp(70px, 10vw, 175px);
+  padding: 0 7vw;
 }
 .highlight {
-  width: 133px;
+  width: min(22vw, 310px);
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 18px;
 }
 .highlight-icon {
-  width: 64px;
-  height: 64px;
-  flex: 0 0 64px;
+  width: clamp(100px, 10vw, 145px);
+  height: clamp(100px, 10vw, 145px);
+  flex: 0 0 clamp(100px, 10vw, 145px);
   border-radius: 50%;
   background: #e8e8e8;
   display: grid;
   place-items: center;
   color: #e8061a;
-  font-size: 40px;
+  font-size: clamp(58px, 5vw, 82px);
   font-weight: 700;
 }
 .highlight h2 {
   font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  margin: 0 0 2px;
+  font-size: clamp(24px, 2.2vw, 34px);
+  line-height: 1;
+  margin: 0 0 6px;
 }
 .highlight p {
   font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: clamp(16px, 1.35vw, 21px);
+  line-height: 1.03;
   white-space: pre-line;
   margin: 0;
 }
@@ -284,23 +284,24 @@ button {
     height: 42vh;
   }
   .highlights {
-    height: auto;
-    gap: 18px;
-    padding: 28px 15px;
+    min-height: calc(100vh - 69px);
+    flex-direction: column;
+    gap: 36px;
+    padding: 40px 15px;
   }
   .highlight {
-    width: 30%;
-    gap: 6px;
+    width: min(82vw, 340px);
+    gap: 18px;
   }
   .highlight-icon {
-    transform: scale(0.75);
-    margin-right: -10px;
+    transform: none;
+    margin-right: 0;
   }
   .highlight h2 {
-    font-size: 14px;
+    font-size: 25px;
   }
   .highlight p {
-    font-size: 11px;
+    font-size: 17px;
   }
   .how-it-works ol {
     grid-template-columns: 1fr;
