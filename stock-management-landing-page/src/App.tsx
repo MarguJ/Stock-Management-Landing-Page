@@ -1,25 +1,21 @@
 import "./index.css";
 import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { Highlights } from "./components/Highlights";
+import { HowItWorks } from "./components/HowItWorks";
+import { About } from "./components/About";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gray-400 min-h-screen">
-      <header>
-        <Navbar></Navbar>
-      </header>
-      <section id="1" className="welcome">
-        <div className="bg-gray-450">
-          <img className="min-h-screen" src="../images/pasillo.jpg" />
-        </div>
-      </section>
-      <section id="2" className="about us">
-        <div className="font-[Kdam Thmor Pro] bg-red-600 min-h-40 text-white text-7xl flex items-center justify-center">
-          ¿Quienes somos?
-        </div>
-      </section>
-      <section id="3" className="app facts"></section>
-      <section id="4" className="contact us"></section>
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <HowItWorks />
+      <About />
+      <Footer />
+    </main>
   );
 }
 
