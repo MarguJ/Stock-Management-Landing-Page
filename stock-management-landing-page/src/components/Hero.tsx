@@ -18,7 +18,7 @@ export function Hero() {
       <div
         className="image-placeholder hero-image"
         aria-label="Espacio reservado para imagen"
-      />
+      ></div>
     </section>
   );
 }

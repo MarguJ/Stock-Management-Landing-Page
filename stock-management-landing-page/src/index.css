@@ -76,11 +76,19 @@ button {
   min-height: calc(100vh - 69px);
   position: relative;
   overflow: hidden;
-  background: #f1f2f2;
+  background-image:
+    url("../images/izquierda.jpg"), url("../images/derecha.jpg");
+  background-size:
+    70% auto,
+    30% auto;
+  background-position: start, end;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #f1f2f2, #f1f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .hero-copy {
   position: relative;
   z-index: 1;
