@@ -240,6 +240,9 @@ button {
 .how-it-works li {
   padding-left: 1px;
 }
+.how-it-works strong {
+  color: #ed0619;
+}
 .about {
   min-height: 455px;
   scroll-margin-top: 69px;
