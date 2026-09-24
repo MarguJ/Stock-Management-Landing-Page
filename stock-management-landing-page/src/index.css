@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Inter";
-  src: url("../images/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+  src: url("/images/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
     format("truetype");
   font-weight: 100 900;
 }
 @font-face {
   font-family: "Kdam Thmor Pro";
-  src: url("../images/fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf")
+  src: url("/images/fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf")
     format("truetype");
   font-weight: 400;
 }
@@ -89,7 +89,7 @@ button {
   position: relative;
   overflow: hidden;
   background-image:
-    url("../images/izquierda.jpg"), url("../images/derecha.jpg");
+    url("/images/izquierda.jpg"), url("/images/derecha.jpg");
   background-size:
     68% 100%,
     32% 100%;
