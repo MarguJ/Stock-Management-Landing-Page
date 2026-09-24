@@ -12,7 +12,7 @@ export function Navbar() {
           <a href="#como-funciona">Entendelo</a>
           <a href="#crece-con-fsm">Probalo</a>
           <button className="nav-cta" type="button">
-            SOLICITAR DEMO
+            PROBAR DEMO
           </button>
         </div>
       </nav>
