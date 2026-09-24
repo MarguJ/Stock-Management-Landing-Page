@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap");
+@font-face { font-family: "Inter"; src: url("../images/fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype"); font-weight: 100 900; }
+@font-face { font-family: "Kdam Thmor Pro"; src: url("../images/fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf") format("truetype"); font-weight: 400; }
 
 :root {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: #080808;
   background: #fff;
   scroll-behavior: smooth;
@@ -38,11 +39,11 @@ button {
   align-items: center;
   gap: 11px;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 21px;
 }
 .brand img:first-child {
-  width: 81px;
+  width: 118px;
   height: auto;
 }
 .brand .brand-divider {
@@ -54,8 +55,8 @@ button {
   display: flex;
   align-items: center;
   gap: 25px;
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 17px;
 }
 .nav-links a {
   color: #333;
@@ -67,13 +68,14 @@ button {
   background: #e8061a;
   color: #fff;
   border-radius: 999px;
-  font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
   font-weight: 700;
   padding: 8px 13px;
 }
 .hero {
-  min-height: calc(100vh - 69px);
+  height: 64vh;
+  min-height: 430px;
   position: relative;
   overflow: hidden;
   background-image:
@@ -90,32 +92,35 @@ button {
 }
 
 .hero-copy {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  width: min(62vw, 880px);
-  height: min(70vh, 620px);
+  left: 4%;
+  top: 47%;
+  transform: translateY(-50%);
+  width: min(57vw, 980px);
+  height: min(58vh, 510px);
   border-radius: 50%;
   background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: -17%;
+  margin-left: 0;
   text-align: center;
 }
 .hero-copy h1,
 .how-it-works h2 {
   margin: 0;
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: clamp(34px, 3.3vw, 53px);
-  font-weight: 700;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(31px, 2.75vw, 48px);
+  font-weight: 400;
   line-height: 0.97;
   letter-spacing: -1.2px;
 }
 .hero-copy p {
-  margin: 24px 0 38px;
+  margin: 16px 0 28px;
   color: #595959;
-  font-size: clamp(19px, 1.8vw, 28px);
+  font-size: clamp(19px, 1.6vw, 27px);
   line-height: 1.15;
 }
 .hero-cta {
@@ -124,15 +129,16 @@ button {
 }
 .hero-image {
   position: absolute;
-  left: 61%;
+  left: 63%;
   top: 50%;
   transform: translateY(-50%);
-  width: min(31vw, 460px);
-  height: min(52vh, 420px);
-  border: 5px solid #070707;
-  border-radius: 38px;
+  width: min(27vw, 430px);
+  height: min(56vh, 460px);
+  border: 4px solid #070707;
+  border-radius: 29px;
   background: #fff;
 }
+.hero-image img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top; border-radius: 24px; }
 .image-placeholder {
   background-image: linear-gradient(
     135deg,
@@ -146,91 +152,94 @@ button {
   background-size: 20px 20px;
 }
 .highlights {
-  min-height: calc(100vh - 69px);
+  height: calc(36vh - 69px);
+  min-height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(70px, 10vw, 175px);
-  padding: 0 7vw;
+  gap: clamp(42px, 5vw, 95px);
+  padding: 0 13vw;
 }
 .highlight {
-  width: min(22vw, 310px);
+  width: min(24vw, 315px);
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 .highlight-icon {
-  width: clamp(100px, 10vw, 145px);
-  height: clamp(100px, 10vw, 145px);
-  flex: 0 0 clamp(100px, 10vw, 145px);
+  width: clamp(94px, 8vw, 132px);
+  height: clamp(94px, 8vw, 132px);
+  flex: 0 0 clamp(94px, 8vw, 132px);
   border-radius: 50%;
   background: #e8e8e8;
   display: grid;
   place-items: center;
   color: #e8061a;
-  font-size: clamp(58px, 5vw, 82px);
+  font-size: clamp(44px, 3.5vw, 62px);
   font-weight: 700;
 }
+.highlight-icon img { width: 68%; height: 68%; object-fit: contain; }
 .highlight h2 {
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: clamp(24px, 2.2vw, 34px);
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(21px, 1.6vw, 28px);
   line-height: 1;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 .highlight p {
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: clamp(16px, 1.35vw, 21px);
-  line-height: 1.03;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(14px, 1.05vw, 18px);
+  line-height: 1.2;
   white-space: pre-line;
   margin: 0;
 }
 .how-it-works {
-  min-height: 224px;
+  min-height: 344px;
   background: #e4e4e4;
-  padding: 27px 5.4% 40px;
+  padding: 53px 5.4% 54px;
   scroll-margin-top: 69px;
 }
 .how-it-works h2 {
   text-align: center;
-  font-size: 27px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(43px, 3.6vw, 66px);
 }
 .how-it-works ol {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
-  margin: 51px 0 0;
+  margin: 52px 0 0;
   padding-left: 24px;
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(19px, 1.4vw, 26px);
+  line-height: 1.25;
 }
 .how-it-works li {
   padding-left: 1px;
 }
 .about {
-  min-height: 780px;
+  min-height: 455px;
   scroll-margin-top: 69px;
   background: #fff;
 }
 .about h2 {
   height: 90px;
-  margin: 20px 0 0;
+  margin: 0;
   display: grid;
   place-items: center;
   background: #ed0619;
   color: white;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 41px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(50px, 4.2vw, 76px);
   line-height: 1;
   letter-spacing: -2px;
 }
 .about-content {
-  max-width: 710px;
-  margin: 52px auto 0;
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
+  max-width: 890px;
+  margin: 76px auto 0;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(24px, 1.8vw, 34px);
+  font-weight: 400;
+  line-height: 1.32;
 }
 .about-content p {
   margin: 0 0 26px;
@@ -240,34 +249,104 @@ button {
 }
 .footer {
   height: 90px;
-  background: #ed0619;
-  color: #fff;
+  background: #fff;
+  color: #ed0619;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2.4vw 0 11.2vw;
-  font-family: "Barlow Condensed", Arial, sans-serif;
-  font-size: 17px;
+  padding: 0 2.4vw 0 3.2vw;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 21px;
 }
 .social-links {
   display: flex;
-  gap: 20px;
+  gap: 23px;
   align-items: center;
-  font-family: Arial, sans-serif;
-  font-size: 28px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 32px;
   font-weight: 700;
 }
-.social-links span:nth-child(2) {
-  font-size: 33px;
+.footer-contact { display: flex; align-items: center; gap: 42px; }
+.footer-contact img { width: 178px; height: auto; }
+.social-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+}
+.social-icon img { width: 100%; height: 100%; object-fit: contain; }
+.social-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 11px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  opacity: 0;
+  pointer-events: none;
+  padding: 8px 11px;
+  min-width: 24px;
+  border-radius: 7px;
+  background: #202020;
+  color: #fff;
+  font:
+    500 13px "Inter",
+    sans-serif;
+  white-space: nowrap;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+.social-icon::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  border: 6px solid transparent;
+  border-top-color: #202020;
+  transition: opacity 0.18s ease;
+}
+.social-icon:hover::after,
+.social-icon:hover::before {
+  opacity: 1;
+}
+.social-icon:hover::after {
+  transform: translateX(-50%) translateY(0);
+}
+.growth {
+  min-height: 476px;
+  padding: 59px 20px 55px;
+  background: #ed0619;
+  color: #fff;
+  text-align: center;
+  scroll-margin-top: 69px;
+}
+.growth h2 {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(44px, 4.5vw, 74px);
   font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -2px;
 }
-.social-links span:nth-child(n + 5) {
-  font-size: 26px;
+.growth-subtitle {
+  margin: 28px 0 39px;
+  font-size: clamp(27px, 2.4vw, 40px);
 }
-.footer > img {
-  width: 124px;
-  height: auto;
-  filter: brightness(0) invert(1);
+.growth-copy {
+  max-width: 900px;
+  margin: 0 auto 39px;
+  font-size: clamp(19px, 1.6vw, 27px);
+  line-height: 1.2;
+}
+.growth button {
+  padding: 15px 52px;
+  border-radius: 12px;
+  background: #fff;
+  color: #111;
+  font-size: 28px;
 }
 @media (max-width: 680px) {
   .navbar {
@@ -292,6 +371,7 @@ button {
     height: 42vh;
   }
   .highlights {
+    height: auto;
     min-height: calc(100vh - 69px);
     flex-direction: column;
     gap: 36px;

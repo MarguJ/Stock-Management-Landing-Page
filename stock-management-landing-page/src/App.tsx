@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero";
 import { Highlights } from "./components/Highlights";
 import { HowItWorks } from "./components/HowItWorks";
 import { About } from "./components/About";
+import { Growth } from "./components/Growth";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <Hero />
       <Highlights />
-      <HowItWorks />
       <About />
+      <HowItWorks />
+      <Growth />
       <Footer />
     </main>
   );

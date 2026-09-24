@@ -5,14 +5,14 @@ export function Navbar() {
         <a className="brand" href="#inicio">
           <img src="/images/fischerLogo.png" alt="fischer" />
           <img className="brand-divider" src="/images/separacion.png" alt="|" />
-          <span>Stock Management</span>
+          <span>stock management<br />software</span>
         </a>
         <div className="nav-links">
-          <a href="#como-funciona">Cómo funciona</a>
-          <a href="#quienes-somos">Quiénes somos</a>
-          <a href="#contactanos">Contactate</a>
+          <a href="#quienes-somos">Conocenos</a>
+          <a href="#como-funciona">Entendelo</a>
+          <a href="#crece-con-fsm">Probalo</a>
           <button className="nav-cta" type="button">
-            ¡Encontranos!
+            SOLICITAR DEMO
           </button>
         </div>
       </nav>

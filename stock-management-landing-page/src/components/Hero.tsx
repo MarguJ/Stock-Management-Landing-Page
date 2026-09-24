@@ -15,10 +15,9 @@ export function Hero() {
           PROBAR DEMO GRATIS
         </button>
       </div>
-      <div
-        className="image-placeholder hero-image"
-        aria-label="Espacio reservado para imagen"
-      ></div>
+      <div className="hero-image">
+        <img src="/images/tarugo.png" alt="Vista de relevamiento de stock" />
+      </div>
     </section>
   );
 }
